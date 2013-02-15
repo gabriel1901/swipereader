@@ -1,0 +1,10 @@
+#!/usr/bin/python
+# -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
+import MyWindow
+from gi.repository import Gtk
+
+window = MyWindow.MyWindow()
+window.set_title('Swype Reader')
+window.connect("destroy",Gtk.main_quit)
+window.show()
+Gtk.main()

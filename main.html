@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>SwypeReader</title>
+  <link href="app.css" rel="stylesheet", type="text/css">
+  <script defer data-main="main" src="lib/require.js"></script>
+  <script type="text/javascript" src="lib/jquery-1.9.0.js"></script>
+  <script type="text/javascript" src="lib/jquery.cycle.all.js"></script>
+  <script type="text/javascript" src="lib/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="lib/scripts.js"></script>
+</head>
+<body>
+
+  <!-- Container -->
+  <div id="container">
+
+    <!-- Contain logo and options -->
+    <header>
+	  <center>
+	    <img id="header-logo" src="media/logo.svg" alt="logo" />
+	  </center>
+	</header>
+
+    <!-- It contain the news squares -->
+    <div id="content">
+		<!-- Article is the div that contain the squares -->
+		<center>
+			<article id="sites">
+			    <!-- Each source is a news source -->
+				<div id="source">
+					<div id="source-inside">
+						<span style="font-size: 20px;color: white;position: absolute; margin-top: 3px; margin-left: 7px;z-index: 1;">OMG! Ubuntu!</span>
+						<img style="height: 200px;width: 350px;position: relative;" src="http://www.muylinux.com/wp-content/uploads/2012/12/raring-ringtail.png" />
+					</div>
+				</div>
+
+				<div id="source">
+					<div id="source-inside">
+						<span style="font-size: 20px;color: white;position: absolute; margin-top: 3px; margin-left: 7px;z-index: 1;">Tecmundo</span>
+						<img style="height: 200px;width: 350px;position: relative;" src="http://www.tecmundo.com.br/imagens/2013/2/materias/6804177299114714.jpg" />
+					</div>
+				</div>
+
+			</article>
+		</center>
+    </div>
+	
+	<!-- Options shows for the user options, like add a source or see information about us -->
+	<div id="options">
+		<center>
+			<h1 class="options-add" style="border-bottom: 1px solid #DDD; width: 90%;padding-bottom: 15px;">Add A Source</h1>
+			<h1 class="options-about" style="border-bottom: 1px solid #DDD; width: 90%;padding-bottom: 15px;">About Us</h1>
+
+			<p class="options-about"><b>Swipe Reader</b> is a funny way to reed your favorites sites <br /> using this clean interface to bring the best experience to read feeds</p>
+		</center>
+	</div>
+	
+	<!-- Footer and buttons -->
+	<footer>
+		<center>
+			<img src="media/footer_navigation_back.png" alt="back" title="Back to home" id="footer-back" />
+			<img src="media/footer_navigation_refresh.png" alt="refresh" title="Refresh" class="footer-false" />
+			<img src="media/footer_content_new.png" alt="new" title="Add a source" id="footer-add" class="footer-true" />
+			<img src="media/footer_content_remove.png" alt="remove" title="Remove a source" class="footer-false" />
+			<img src="media/footer_action_about.png" alt="about" title="About it" id="footer-about" class="footer-true" />
+		</center>
+	</footer>
+	
+  </div>
+
+</body>
+</html>
